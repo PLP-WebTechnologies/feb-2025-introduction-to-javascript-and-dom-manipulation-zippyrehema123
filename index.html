@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: pink;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+        #colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .item {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Manipulation Demo</h1>
+        <p>This page demonstrates various JavaScript DOM manipulation techniques</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Text Content Manipulation</h2>
+            <p id="dynamicText">This text will change when you click the button below.</p>
+            <button id="changeTextBtn">Change Text</button>
+        </section>
+
+        <section>
+            <h2>CSS Style Manipulation</h2>
+            <div id="colorBox"></div>
+            <button id="changeColorBtn">Change Color</button>
+            <button id="changeSizeBtn">Change Size</button>
+        </section>
+
+        <section>
+            <h2>Adding & Removing Elements</h2>
+            <div id="itemContainer">
+                <!-- Items will be added here -->
+            </div>
+            <button id="addItemBtn">Add Item</button>
+            <button id="removeItemBtn">Remove Last Item</button>
+        </section>
+
+        <section>
+            <h2>Interactive Element</h2>
+            <p>Mouse over the text below to see a style change:</p>
+            <p id="hoverText">Hover here!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for DOM manipulation demonstration</p>
+    </footer>
+</body>
+</html>
